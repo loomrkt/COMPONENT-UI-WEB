@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+body {
+  overflow: hidden;
+}
+#loader-wrapper {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+#loader-wrapper object {
+  /* modifier cette scale selon votre video ou svg 
+  vous pouvez aussi l'effacer et mettre un width et height 100v* si vous voulez  */
+  transform: scale(0.5);
+}
